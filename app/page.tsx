@@ -37,6 +37,15 @@ export default function Page() {
       <section id="top" className="relative flex min-h-[720px] items-end overflow-hidden bg-[#29291f] px-6 pb-16 pt-36 text-white lg:min-h-[810px] lg:px-10 lg:pb-24">
         <Image src="/hero-coffee.png" alt="Coffee on a sunlit cafe table" fill priority className="object-cover object-center opacity-80" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(27,28,21,.85)_0%,rgba(27,28,21,.34)_58%,rgba(27,28,21,.15)_100%)]" />
+        <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+          <div className="hero-orbit hero-orbit-one" />
+          <div className="hero-orbit hero-orbit-two" />
+          <div className="hero-glow hero-glow-one" />
+          <div className="hero-glow hero-glow-two" />
+          <span className="hero-spark hero-spark-one" />
+          <span className="hero-spark hero-spark-two" />
+          <span className="hero-spark hero-spark-three" />
+        </div>
         <div className="relative mx-auto w-full max-w-7xl">
           <p className="mb-7 flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.28em] text-[#e4b17a]"><span className="h-px w-8 bg-[#e4b17a]" />Panggang lokal, rasa personal</p>
           <h1 className="max-w-4xl font-display text-[clamp(4rem,10vw,9.3rem)] leading-[.86] tracking-[-.06em]">Enjoy<br /><em className="font-normal text-[#e8b27a]">High-Quality</em><br />Local Brews</h1>
