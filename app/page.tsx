@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { ArrowDownRight, ArrowUpRight, Instagram, Menu, MapPin, Phone, X } from 'lucide-react'
+import { ArrowDownRight, ArrowUpRight, AtSign, Menu, MapPin, Phone, X } from 'lucide-react'
 import { useState } from 'react'
 
 const menuItems = [
@@ -57,30 +57,7 @@ export default function Page() {
 
       <section id="story" className="bg-[#c97842] px-6 py-20 text-[#2b2b22] lg:px-10 lg:py-28"><div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1fr_1.2fr] md:items-end"><p className="text-[10px] font-semibold uppercase tracking-[0.28em]">01 — Our approach</p><div><h2 className="max-w-3xl font-display text-5xl leading-[.93] tracking-[-.05em] md:text-7xl">A little ritual<br /><em className="font-normal">in every cup.</em></h2><p className="mt-8 max-w-md text-sm leading-relaxed text-[#553d2d]">Kopi Senja is a neighbourhood coffee bar built around good beans, local makers, and the simple joy of slowing down together.</p></div></div></section>
 
-      <footer id="visit" className="bg-[#29291f] px-6 py-16 text-[#f4eee4] lg:px-10 lg:py-20"><div className="mx-auto max-w-7xl"><div className="grid gap-12 md:grid-cols-3"><div><a href="#top" className="font-display text-3xl">Kopi Senja<span className="text-[#df9d5f]">.</span></a><p className="mt-5 max-w-xs text-sm leading-relaxed text-white/55">A warm corner for high-quality local brews and unhurried conversations.</p></div><div><p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#e2a56f]">Find us</p><address className="not-italic text-sm leading-7 text-white/75"><span className="flex gap-3"><MapPin size={17} className="mt-1 shrink-0 text-[#e2a56f]" />Jl. Kemang Raya No. 17<br />Jakarta Selatan 12730</span></address></div><div><p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#e2a56f]">Come by</p><p className="flex gap-3 text-sm leading-7 text-white/75"><Phone size={17} className="mt-1 shrink-0 text-[#e2a56f]" /><span>+62 21 719 2048<br />Every day, 07.00 — 22.00</span></p></div></div><div className="mt-16 flex flex-col justify-between gap-5 border-t border-white/15 pt-6 text-[10px] uppercase tracking-[0.2em] text-white/40 sm:flex-row"><span>© 2024 Kopi Senja</span><a href="#top" className="flex items-center gap-2 hover:text-white"><Instagram size={14} /> @kopisenja</a></div></div></footer>
+      <footer id="visit" className="bg-[#29291f] px-6 py-16 text-[#f4eee4] lg:px-10 lg:py-20"><div className="mx-auto max-w-7xl"><div className="grid gap-12 md:grid-cols-3"><div><a href="#top" className="font-display text-3xl">Kopi Senja<span className="text-[#df9d5f]">.</span></a><p className="mt-5 max-w-xs text-sm leading-relaxed text-white/55">A warm corner for high-quality local brews and unhurried conversations.</p></div><div><p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#e2a56f]">Find us</p><address className="not-italic text-sm leading-7 text-white/75"><span className="flex gap-3"><MapPin size={17} className="mt-1 shrink-0 text-[#e2a56f]" />Jl. Kemang Raya No. 17<br />Jakarta Selatan 12730</span></address></div><div><p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#e2a56f]">Come by</p><p className="flex gap-3 text-sm leading-7 text-white/75"><Phone size={17} className="mt-1 shrink-0 text-[#e2a56f]" /><span>+62 21 719 2048<br />Every day, 07.00 — 22.00</span></p></div></div><div className="mt-16 flex flex-col justify-between gap-5 border-t border-white/15 pt-6 text-[10px] uppercase tracking-[0.2em] text-white/40 sm:flex-row"><span>© 2024 Kopi Senja</span><a href="#top" className="flex items-center gap-2 hover:text-white"><AtSign size={14} /> @kopisenja</a></div></div></footer>
     </main>
-  )
-}
-
-import './globals.css'
-import type { Metadata, Viewport } from 'next'
-import { Analytics } from '@vercel/analytics/next'
-
-export const metadata: Metadata = {
-  title: 'Kopi Senja — Local brews, golden hours',
-  description: 'Kopi Senja is a neighbourhood coffee bar in Jakarta serving high-quality local brews.',
-  generator: 'v0.app',
-}
-
-export const viewport: Viewport = { colorScheme: 'light', themeColor: '#29291f' }
-
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="en">
-      <body className="antialiased">
-        {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
-      </body>
-    </html>
   )
 }

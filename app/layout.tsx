@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Kopi Senja — Local brews, golden hours',
+  description: 'Kopi Senja is a neighbourhood coffee bar in Jakarta serving high-quality local brews.',
   generator: 'v0.app',
   icons: {
     icon: [
